@@ -4,6 +4,7 @@ import { showAlert } from './alerts';
 export const signup = async (name, email, password, passwordConfirm) => {
   try {
     // grab data from form and send as post request
+    // Updating data
     const res = await axios({
       method: 'POST',
       url: '/api/v1/users/signup',
