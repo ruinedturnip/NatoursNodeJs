@@ -48,7 +48,7 @@ exports.signup = catchAsync(async (req, res, next) => {
   });
 
   //////////////////////////
-  console.log('Exports.signup');
+  // console.log('Exports.signup');
   /////////////////////////
   // const url = `${req.protocol}://${req.get('host')}/me`;
   // await new Email(newUser, url).sendWelcome();
@@ -70,7 +70,7 @@ exports.signup = catchAsync(async (req, res, next) => {
   newUser.password = undefined;
 
   //////////////////////////
-  console.log('Exports.signup -- Just before response');
+  // console.log('Exports.signup -- Just before response');
   /////////////////////////
 
   res.status(201).json({
